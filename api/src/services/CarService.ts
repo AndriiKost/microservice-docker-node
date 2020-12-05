@@ -15,13 +15,11 @@ export default class CarService implements ICarService {
     }
 
     async getAll(): Promise<ICar[]> {
-        const result = await this._httpService.get(SERVICE_URL + '/car');
-        return await result.json() as ICar[];
+        return await this._httpService.get(SERVICE_URL + '/car');
     }
 
     async getOne(id: string): Promise<ICar> {
-        const result = await this._httpService.get(SERVICE_URL + '/car/'+id);
-        return await result.json() as ICar;
+        return await this._httpService.get(SERVICE_URL + '/car/'+id);
     }
 
 }

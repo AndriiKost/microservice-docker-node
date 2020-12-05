@@ -12,6 +12,7 @@ app.get('/car/:id', (req, res) => {
     const id = req.params.id;
     console.log('/car/:id endpoint hit with id = ', id);
     if (!id) {
+      res.statusCode(500);
       return res.send({});
     }
     const car = cars.find(car => car.id === id);
