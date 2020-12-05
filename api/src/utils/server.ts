@@ -35,15 +35,8 @@ export function build_500_response(serverError: Error | string) {
 		return new ErrorResponse(HttpResponseCode.SERVER_ERROR, serverError.message);
 	}
 	let errorName = serverError.name ? serverError.name : 'Unspecified error';
-	let error = _getStandardizedServerError(errorName);
+	let error = 'Unspecified server error';
 	const messageDetail =
 		`A server error occurred while processing the request: ${error}`;
 	return new ErrorResponse(HttpResponseCode.SERVER_ERROR, messageDetail);
-}
-
-export function _getStandardizedServerError(errorName: string): string {
-	if (errorName === 'SequelizeDatabaseError'){
-		return 'Server could not parse the provided query';
-	}
-	return 'Unspecified server error';
 }
