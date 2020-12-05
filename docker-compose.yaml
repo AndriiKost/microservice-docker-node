@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  api:
+    build:
+      context: ./api
+    networks:
+    - app-network
+    env_file:
+    - ./api/.env
+    ports:
+    - 8000:8000
+    restart: on-failure
+
+  service:
+    build:
+      context: ./service
+    networks:
+    - app-network
+    expose:
+    - 8001
+    restart: on-failure
+
+networks:
+  app-network:
+    driver: bridge
