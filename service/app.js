@@ -23,5 +23,5 @@ app.get('/car/:id', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Car service listening at ${port}`)
+  console.log(`Service is listening at ${port}`)
 })
