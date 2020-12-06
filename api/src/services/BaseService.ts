@@ -1,4 +1,4 @@
-import { LogType } from '@/types/Server';
+import { IBaseService, LogType } from '@/types/Server';
 
 export default class BaseService implements IBaseService {
 
