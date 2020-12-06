@@ -12,7 +12,7 @@ There are 2 endpoints accessible to the public:
 
 http://localhost:9999/api/cars - will return a full list of cars in JSON format
 
-http://localhost:9999/api/cars/:id - will return a single car for the requested id. If there's no car with a given id, the API endpoint will return an empty object.
+http://localhost:9999/api/cars/:id - will return a single car for the requested id
 
 # How To Start
 1. Navigate to the root directory of the project.
