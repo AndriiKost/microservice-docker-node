@@ -1,7 +1,7 @@
 {
     "watch": ["src/*", "public/*"],
     "ext": "ts, js, json",
-    "exec": "ts-node -r tsconfig-paths/register ./src/app.ts",
+    "exec": "./node_modules/.bin/ts-node -r tsconfig-paths/register ./src/app.ts",
     "ignore": [
       "**/*.test.ts",
       "**/*.spec.ts",

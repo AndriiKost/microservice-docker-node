@@ -22,3 +22,13 @@ http://localhost:9999/api/cars/:id - will return a single car for the requested 
 ## Dependencies
 - docker
 - docker-compose
+
+# For local development (without Docker)
+1. Replace the value of BASE_URL property in `api/.env` file to http://localhost:8001
+2. Navigate to `api` folder and execute `npm install && npm start`
+3. Navigate to `service` folder and execute `npm install && npm start`
+4. Wait for servers to start listening on ports 8000(API) and 8001(Service)
+
+## Dependencies
+- node
+- npm
