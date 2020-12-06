@@ -35,8 +35,7 @@ export function build_500_response(serverError: Error | string) {
 		return new ErrorResponse(HttpResponseCode.SERVER_ERROR, serverError.message);
 	}
 	let errorName = serverError.name ? serverError.name : 'Unspecified error';
-	let error = 'Unspecified server error';
 	const messageDetail =
-		`A server error occurred while processing the request: ${error}`;
+		`A server error occurred while processing the request: ${errorName}`;
 	return new ErrorResponse(HttpResponseCode.SERVER_ERROR, messageDetail);
 }
