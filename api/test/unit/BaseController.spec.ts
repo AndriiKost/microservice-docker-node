@@ -1,5 +1,5 @@
 import HttpResponseCode from '@/classes/HttpResponseCode';
-import BaseController from "@/controllers/BaseController";
+import BaseController from '@/controllers/BaseController';
 
 describe('BaseController', () => {
 

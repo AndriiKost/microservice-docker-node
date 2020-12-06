@@ -1,5 +1,5 @@
+import IHttpService from '@/types/Server';
 import { Response } from 'node-fetch';
-import IHttpService from '../../src/types/Server';
 
 export class MockHttpService implements IHttpService {
 	getCount: number = 0;

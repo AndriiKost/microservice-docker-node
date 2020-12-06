@@ -1,4 +1,4 @@
-import CarService from '../../src/services/CarService';
+import CarService from '@/services/CarService';
 import { MockHttpService } from '../mock/MockHttpService';
 
 describe('CarService', () => {
