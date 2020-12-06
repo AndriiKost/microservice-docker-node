@@ -25,5 +25,5 @@ server.listen(port);
 server.on('error', (err) => onError(err, port));
 
 server.on('listening', () => {
-    console.log('Car API is listening at ' + port);
+    console.log('API is listening at ' + port);
 });
