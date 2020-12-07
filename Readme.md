@@ -8,7 +8,7 @@ Service is running on port 8001 in the docker container and is not exposed to th
 
 API is communicating with Service through the docker network.
 
-There are 2 endpoints accessible to the public:
+There are API 2 endpoints:
 
 http://localhost:9999/api/cars - will return a full list of cars in JSON format
 
@@ -16,7 +16,7 @@ http://localhost:9999/api/cars/:id - will return a single car for the requested 
 
 # How To Start
 1. Navigate to the root directory of the project.
-2. Execute a command `docker-compose up`
+2. Execute `docker-compose up`
 3. 2 node services in docker containers should start and listen on corresponding ports
 
 ## Dependencies
@@ -32,3 +32,6 @@ http://localhost:9999/api/cars/:id - will return a single car for the requested 
 ## Dependencies
 - node
 - npm
+
+# Testing
+To execute tests simply run `npm run test` from the API directory.
