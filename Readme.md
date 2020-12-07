@@ -33,5 +33,5 @@ http://localhost:9999/api/cars/:id - will return a single car for the requested 
 - node
 - npm
 
-# Testing
-To execute tests simply run `npm run test` from the API directory.
+# Tests
+To execute unit tests simply run `npm run test` from the API directory.
